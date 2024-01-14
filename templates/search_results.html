@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Product Comparison</h2>
+
+  <h3>Amazon</h3>
+  <p>Name: {{ amazon_data.name }}</p>
+  <p>Price: {{ amazon_data.price }}</p>
+  <!-- Add more data points as needed -->
+
+  <h3>Flipkart</h3>
+  <p>Name: {{ flipkart_data.name }}</p>
+  <p>Price: {{ flipkart_data.price }}</p>
+  <!-- Add more data points as needed -->
+{% endblock %}
