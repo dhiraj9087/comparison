@@ -88,7 +88,7 @@ def get_flipkart_product_info(product_name):
         return {'name': product_name, 'price': price}
 
     else:
-        print(f"Error: {response.status_code}")
+        # print(f"Error: {response.status_code}")
         return {'name': product_name, 'price': 'N/A'}
 # def scrape_flipkart(product_name):
 #     flipkart_url = f'https://www.flipkart.com/search?q={product_name.replace(" ", "%20")}'
