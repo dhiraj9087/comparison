@@ -12,13 +12,13 @@ def search_view(request):
         if form.is_valid():
             product_name = form.cleaned_data['product_name']
 
-            # Perform web scraping on Amazon
+           
             amazon_data = get_amazon_product_info(product_name)
 
-            # Perform web scraping on Flipkart
+          
             flipkart_data = get_flipkart_product_info(product_name)
 
-            # Pass the scraped data to the template
+            
             return render(request, 'search_results.html', {'amazon_data': amazon_data, 'flipkart_data': flipkart_data})
 
     else:
